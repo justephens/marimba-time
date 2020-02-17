@@ -3,7 +3,17 @@ guid: 9fbc23dcf26e30342976ba8e0bb6dc6a
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 05 - Default
+    second: {fileID: 2100000, guid: 8f72de64a61354c4f8bc1656e0f3cc2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: diefewf
+    second: {fileID: 2100000, guid: 08babfd8c63ef01469e032e4f219084e, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
