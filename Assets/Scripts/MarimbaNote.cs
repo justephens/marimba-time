@@ -5,17 +5,33 @@ using UnityEngine;
 
 public class MarimbaNote : MonoBehaviour
 {
-    public static Dictionary<string, MarimbaNote> notes;
+    public static Dictionary<string, MarimbaNote> notes = new Dictionary<string, MarimbaNote>();
 
     public AudioClip soundToPlay;
     public bool useVelocityBasedVolume = true;
     public float velocityVolumeMultiplier = 5.0f;
 
+    private MeshRenderer rend;
+    private Material baseMaterial;
+    public Material highlightMaterial;
 
     void Start()
     {
         // Add this note block to the global list of notes
-        notes.Add(this.gameObject.name, this);
+        notes.Add(gameObject.name, this);
+
+        rend = GetComponent<MeshRenderer>();
+        baseMaterial = rend.material;
+    }
+
+    void Highlight()
+    {
+        rend.material = highlightMaterial;
+    }
+
+    void UnHighlight()
+    {
+        rend.material = baseMaterial;
     }
 
 
