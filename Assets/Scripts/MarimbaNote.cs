@@ -36,7 +36,7 @@ public class MarimbaNote : MonoBehaviour
 
 
     // This runs every time the block is hit
-    void OnTriggerEnter(Collider col)
+    void OnCollisionEnter(Collision col)
     {
         // Audio source to play from
         AudioSource audio = null;
@@ -57,7 +57,7 @@ public class MarimbaNote : MonoBehaviour
 
         // Set properties of AudioSource, then play clip
         audio.clip = soundToPlay;
-        audio.volume = (useVelocityBasedVolume) ? col.attachedRigidbody.velocity.magnitude * velocityVolumeMultiplier : 1.0f;
+        audio.volume = (useVelocityBasedVolume) ? col.relativeVelocity.magnitude * velocityVolumeMultiplier : 1.0f;
         audio.Play();
     }
 }
