@@ -11,27 +11,50 @@ public class MarimbaNote : MonoBehaviour
     public bool useVelocityBasedVolume = true;
     public float velocityVolumeMultiplier = 5.0f;
 
-    private MeshRenderer rend;
-    private Material baseMaterial;
-    public Material highlightMaterial;
+    private bool note_active = false;
+    private float activate_time = 0f;
+    private float hl_delay_time = 0f;
+    private float hl_ramp_time = 0f;
 
     void Start()
     {
         // Add this note block to the global list of notes
         notes.Add(gameObject.name, this);
-
-        rend = GetComponent<MeshRenderer>();
-        baseMaterial = rend.material;
     }
 
-    void Highlight()
+    void Update()
     {
-        rend.material = highlightMaterial;
+        if (note_active) {
+            // Get the highlight color from the Highlight material in the renderer
+            MeshRenderer rend = GetComponent<MeshRenderer>();
+            Color tint = rend.materials[1].GetColor("_TintColor");
+
+            // Linear interpolate between transparent and visible highlight colors,
+            // based on time since "activation"
+            tint = Color.Lerp(
+                new Color(tint.r, tint.g, tint.b, 0.0f),
+                new Color(tint.r, tint.g, tint.b, 0.5f),
+                Mathf.Clamp((Time.time - activate_time - hl_delay_time) / hl_ramp_time, 0, 1));
+
+            // Set the highlight color to the Lerp'ed color
+            rend.materials[1].SetColor("_TintColor", tint);
+        }
     }
 
-    void UnHighlight()
+    public void ActivateNote(float hl_delay, float hl_ramp)
     {
-        rend.material = baseMaterial;
+        note_active = true;
+        activate_time = Time.time;
+        hl_delay_time = hl_delay;
+        hl_ramp_time = hl_ramp;
+    }
+
+    public void UnHighlight()
+    {
+        MeshRenderer rend = GetComponent<MeshRenderer>();
+        Color tint = rend.materials[1].GetColor("_TintColor");
+        tint = new Color(tint.r, tint.g, tint.b, 0);
+        rend.materials[1].SetColor("_TintColor", tint);
     }
 
 
@@ -59,5 +82,10 @@ public class MarimbaNote : MonoBehaviour
         audio.clip = soundToPlay;
         audio.volume = (useVelocityBasedVolume) ? col.relativeVelocity.magnitude * velocityVolumeMultiplier : 1.0f;
         audio.Play();
+
+
+
+        // Let the application manager know about the collision
+        //Application.RegisterNoteHit(gameObject, col);
     }
 }
