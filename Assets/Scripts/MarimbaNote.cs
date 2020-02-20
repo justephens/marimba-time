@@ -2,28 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using static MusicHelper;
 
 public class MarimbaNote : MonoBehaviour
 {
-    public static Dictionary<string, MarimbaNote> notes = new Dictionary<string, MarimbaNote>();
-
     public AudioClip soundToPlay;
     public bool useVelocityBasedVolume = true;
     public float velocityVolumeMultiplier = 5.0f;
 
     private bool note_active = false;
-    private float activate_time = 0f;
+    private float activate_time = -1f;
     private float hl_delay_time = 0f;
     private float hl_ramp_time = 0f;
 
+    // Returns the given note
+    public static MarimbaNote GetNote(string name) {
+        GameObject note = GameObject.Find(name);
+        return note.GetComponent<MarimbaNote>();
+    }
+    public static MarimbaNote GetNote(int n) {
+        return GetNote(MusicHelper.GetNoteName(n));
+    }
+
     void Start()
     {
-        // Add this note block to the global list of notes
-        notes.Add(gameObject.name, this);
     }
 
     void Update()
     {
+        // If the note is "active", i.e. awaiting the user to hit it, then highlight
+        // using the parameters set at the point of activation
         if (note_active) {
             // Get the highlight color from the Highlight material in the renderer
             MeshRenderer rend = GetComponent<MeshRenderer>();
@@ -39,6 +47,14 @@ public class MarimbaNote : MonoBehaviour
             // Set the highlight color to the Lerp'ed color
             rend.materials[1].SetColor("_TintColor", tint);
         }
+
+        // If the note is not active, then we remove highlight from it
+        else {
+            MeshRenderer rend = GetComponent<MeshRenderer>();
+            Color tint = rend.materials[1].GetColor("_TintColor");
+            tint = new Color(tint.r, tint.g, tint.b, 0);
+            rend.materials[1].SetColor("_TintColor", tint);
+        }
     }
 
     public void ActivateNote(float hl_delay, float hl_ramp)
@@ -49,12 +65,12 @@ public class MarimbaNote : MonoBehaviour
         hl_ramp_time = hl_ramp;
     }
 
-    public void UnHighlight()
+    public void DeactivateNote()
     {
-        MeshRenderer rend = GetComponent<MeshRenderer>();
-        Color tint = rend.materials[1].GetColor("_TintColor");
-        tint = new Color(tint.r, tint.g, tint.b, 0);
-        rend.materials[1].SetColor("_TintColor", tint);
+        note_active = false;
+        activate_time = -1f;
+        hl_delay_time = 0f;
+        hl_ramp_time = 0;
     }
 
 
@@ -83,9 +99,7 @@ public class MarimbaNote : MonoBehaviour
         audio.volume = (useVelocityBasedVolume) ? col.relativeVelocity.magnitude * velocityVolumeMultiplier : 1.0f;
         audio.Play();
 
-
-
         // Let the application manager know about the collision
-        //Application.RegisterNoteHit(gameObject, col);
+        Application.GetInstance().RegisterNoteHit(gameObject, col);
     }
 }

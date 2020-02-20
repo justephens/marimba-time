@@ -2,71 +2,98 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using static MusicHelper;
+
 public class Application : MonoBehaviour
 {
     enum GameMode {
-        MAIN,
+        MENU,
         NOTE_DRILL,
     };
-    static GameMode gameMode = GameMode.NOTE_DRILL;
 
-    MusicDisplay display;
+    // Singleton
+    private static Application _instance;
+    public static Application GetInstance() {
+        return _instance;
+    }
 
-    // Start is called before the first frame update
+
+
+    /////////////////
+    // APPLICATION //
+    /////////////////
+    static GameMode gameMode = GameMode.NOTE_DRILL;     // Current game mode
+    MusicDisplay display;                               // Reference to Music Display
+
     void Start()
     {
+        _instance = this;
         display = GameObject.Find("MusicDisplay").GetComponent<MusicDisplay>();
+
+        Drill_NextNote();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        /*if (gameMode == GameMode.NOTE_DRILL) {
-            int pitch = Random.Range(0, 7);
-
-            Debug.Log("Generated pitch " + pitch);
-
-            display.DisplayNote(0, pitch, true);
-
-            GameObject marimbaBlock;
-            switch(pitch) {
-            case 0:
-                marimbaBlock = GameObject.Find("C2");
-                break;
-            case 1:
-                marimbaBlock = GameObject.Find("D2");
-                break;
-            case 2:
-                marimbaBlock = GameObject.Find("E2");
-                break;
-            case 3:
-                marimbaBlock = GameObject.Find("F2");
-                break;
-            case 4:
-                marimbaBlock = GameObject.Find("G2");
-                break;
-            case 5:
-                marimbaBlock = GameObject.Find("A3");
-                break;
-            case 6:
-                marimbaBlock = GameObject.Find("B3");
-                break;
-            case 7:
-            default:
-                marimbaBlock = GameObject.Find("C3");
-                break;
-            }
-
-            Debug.Log("Found object " + marimbaBlock.name);
-
-            marimbaBlock.GetComponent<MarimbaNote>().ActivateNote(5f, 5f);
-        }*/
+        if (gameMode == GameMode.NOTE_DRILL) {
+        }
     }
+
+
+
+    ////////////////
+    // NOTE DRILL //
+    ////////////////
+    int drill_pitch = -1;               // Current pitch to hit
+    int drill_score = 0;               // Current score
+    float drill_delay = 5.0f;           // Length of time to hit note
+    float drill_time = -1f;             // Time previous note began
+
+    // Generates the next note in the Drill exercise
+    void Drill_NextNote()
+    {
+        // Generate a random pitch and draw it to the display
+        drill_pitch = Random.Range(48, 59);
+        display.ClearDisplay();
+        display.DisplayNote(0, drill_pitch, true);
+
+        // Activate the note, so that it will highlight after a delay
+        MarimbaNote note = MarimbaNote.GetNote(drill_pitch);
+        note.ActivateNote(5f, 2.5f);
+
+        // Reset time
+        drill_time = Time.time;
+
+        Debug.Log("Generated pitch " + drill_pitch);
+        Debug.Log("Found object " + note.gameObject.name);
+    }
+
+
 
     // Allows Marimba notes to alert the Application about collisions. Used for
     // menu selection and game playing
     public void RegisterNoteHit(GameObject note, Collision col)
     {
         Debug.Log(note.name + " hit by mallets");
+
+        // If the user is playing the Note Drill game mode
+        if (gameMode == GameMode.NOTE_DRILL)
+        {
+            // Correct Note
+            if (note.name == GetNoteName(drill_pitch)) {
+                // Increase the score based on speed
+                drill_score += (int) Mathf.Max(
+                    (drill_delay*1000) - Mathf.Floor((Time.time - drill_time)*100) * 10, 0);
+                Debug.Log("SCORE: " + drill_score);
+
+                // Deactivate previous note, generate a new one
+                note.GetComponent<MarimbaNote>().DeactivateNote();
+                Drill_NextNote();
+            }
+            // Incorrect Note
+            else {
+                drill_score -= 200;
+            }
+        }
     }
 }
