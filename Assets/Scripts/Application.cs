@@ -53,7 +53,7 @@ public class Application : MonoBehaviour
     void Drill_NextNote()
     {
         // Generate a random pitch and draw it to the display
-        drill_pitch = Random.Range(48, 59);
+        drill_pitch = Random.Range(48, 60);
         display.ClearDisplay();
         display.DisplayNote(0, drill_pitch, true);
 

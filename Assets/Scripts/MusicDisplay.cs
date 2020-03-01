@@ -33,7 +33,9 @@ public class MusicDisplay : MonoBehaviour
 
         // Set y-location based on pitch and on clef
         float ylocation = 0.0f;
-        if (clef) ylocation = .0925f + (.0205f * MusicHelper.GetLocalNote(pitch));
+        if (clef) ylocation = .0925f + (.0205f * (MusicHelper.GetLocalNaturalNote(pitch)-2));
+
+        Debug.Log("Local Natural Note: " + MusicHelper.GetLocalNaturalNote(pitch));
 
         // Set x-location based on given parameter
         float xlocation = -.05f  * xpos;
