@@ -1126,6 +1126,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8303740866129146730, guid: c6b3d2b2772555b49aefdb2c41021910,
         type: 3}
+    - target: {fileID: 747056465862736699, guid: d7a5c3f45ce9e7d4282aac32c563dfe1,
+        type: 3}
+      propertyPath: SharpSign
+      value: 
+      objectReference: {fileID: 6160975606177777162, guid: 6d9bda0b846403148aed7ca79b2967bf,
+        type: 3}
     - target: {fileID: 747056465862736836, guid: d7a5c3f45ce9e7d4282aac32c563dfe1,
         type: 3}
       propertyPath: m_LocalPosition.x
