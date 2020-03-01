@@ -6,6 +6,7 @@ using static MusicHelper;
 
 public class MusicDisplay : MonoBehaviour
 {
+    public GameObject SharpSign;
     public GameObject WholeNotePref;
     public GameObject HalfNotePref;
     public GameObject QuarterNotePref;
@@ -35,13 +36,20 @@ public class MusicDisplay : MonoBehaviour
         float ylocation = 0.0f;
         if (clef) ylocation = .0925f + (.0205f * (MusicHelper.GetLocalNaturalNote(pitch)-2));
 
-        Debug.Log("Local Natural Note: " + MusicHelper.GetLocalNaturalNote(pitch));
-
         // Set x-location based on given parameter
         float xlocation = -.05f  * xpos;
 
         // Update transform to reflect the x and y values just calculated
         note.transform.localPosition = new Vector3(xlocation, ylocation, 0);
+
+
+
+        // Exit if not sharp, continue if it is
+        if (!MusicHelper.GetIsNoteSharp(pitch)) return;
+        GameObject sharp = Instantiate(SharpSign);
+        sharp.transform.parent = transform;
+        sharp.transform.localRotation = Quaternion.identity;
+        sharp.transform.localPosition = new Vector3(xlocation + .05f, ylocation, 0);
     }
 
     // Clears the display of all notes
