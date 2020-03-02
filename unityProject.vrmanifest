@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.vrmarimba.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\Nicholas Bleuzen\\Documents\\GitHub\\marimba-time\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\batma\\Documents\\GitHub\\marimba-time\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "VR Marimba [Testing]"
