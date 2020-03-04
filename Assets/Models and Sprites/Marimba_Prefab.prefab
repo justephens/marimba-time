@@ -765,6 +765,7 @@ GameObject:
   - component: {fileID: 6621570227973937652}
   - component: {fileID: 4728084508751097863}
   - component: {fileID: 4728084508751097862}
+  - component: {fileID: 6043145534757408889}
   - component: {fileID: 4728084508751097860}
   - component: {fileID: 4728084508751097861}
   m_Layer: 0
@@ -865,6 +866,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 0.9713577, z: 0.15240003}
   m_Center: {x: 0.00000071525574, y: 0.14932139, z: 0.07620049}
+--- !u!65 &6043145534757408889
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822859494386090835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.9713577, z: 0.18}
+  m_Center: {x: 0.00000071525574, y: 0.14932139, z: 0.07620049}
 --- !u!114 &4728084508751097860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -929,8 +943,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: 44ffaa0e876b5e24891b8e77c3df8997, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &824684532278955994
 GameObject:
@@ -945,6 +959,7 @@ GameObject:
   - component: {fileID: 2225723007074763158}
   - component: {fileID: 4728084508910019912}
   - component: {fileID: 4728084508910019911}
+  - component: {fileID: 7613545839012036479}
   - component: {fileID: 4728084508910019909}
   - component: {fileID: 4728084508910019910}
   m_Layer: 0
@@ -1045,6 +1060,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100046, y: 0.4223008, z: 0.15240003}
   m_Center: {x: 0.0000014305115, y: 0.4238498, z: 0.07620049}
+--- !u!65 &7613545839012036479
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824684532278955994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.4223008, z: 0.18}
+  m_Center: {x: 0.0000014305115, y: 0.4238498, z: 0.07620049}
 --- !u!114 &4728084508910019909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,8 +1137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: 8a97f77c112531048b677624e28a7cb4, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &947272594719792014
 GameObject:
@@ -1392,6 +1420,7 @@ GameObject:
   - component: {fileID: 6326768745706203228}
   - component: {fileID: 4728084508056861522}
   - component: {fileID: 4728084508056861521}
+  - component: {fileID: 2069143791642826011}
   - component: {fileID: 4728084508056861615}
   - component: {fileID: 4728084508056861520}
   m_Layer: 0
@@ -1492,6 +1521,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 0.8563811, z: 0.15240003}
   m_Center: {x: -0.00000023841858, y: 0.20680964, z: 0.07620049}
+--- !u!65 &2069143791642826011
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109765953582414436}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.8563811, z: 0.18}
+  m_Center: {x: -0.00000023841858, y: 0.20680964, z: 0.07620049}
 --- !u!114 &4728084508056861615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1557,7 +1599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: bd352d35447af484eb34173f5e163591, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &1119028809347740515
 GameObject:
@@ -1572,6 +1614,7 @@ GameObject:
   - component: {fileID: 3741512528252573473}
   - component: {fileID: 4728084507748206815}
   - component: {fileID: 4728084507748206814}
+  - component: {fileID: 1165002219435239390}
   - component: {fileID: 4728084507748206812}
   - component: {fileID: 4728084507748206813}
   m_Layer: 0
@@ -1672,6 +1715,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100046, y: 0.47538212, z: 0.15240003}
   m_Center: {x: 0.00000047683716, y: 0.39730918, z: 0.07620049}
+--- !u!65 &1165002219435239390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119028809347740515}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.47538212, z: 0.18}
+  m_Center: {x: 0.00000047683716, y: 0.39730918, z: 0.07620049}
 --- !u!114 &4728084507748206812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1736,8 +1792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: acbd4df7c3b1e1f4cacbe4606ebf3386, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &1149221198644386347
 GameObject:
@@ -1846,6 +1902,7 @@ GameObject:
   - component: {fileID: 2831612023984480959}
   - component: {fileID: 4728084509080625237}
   - component: {fileID: 4728084509080625236}
+  - component: {fileID: 70385635188847774}
   - component: {fileID: 4728084509080625234}
   - component: {fileID: 4728084509080625235}
   m_Layer: 0
@@ -1946,6 +2003,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100046, y: 0.56681985, z: 0.15240003}
   m_Center: {x: 0.0000001192093, y: 0.35159034, z: 0.07620049}
+--- !u!65 &70385635188847774
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173726912023296630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.56681985, z: 0.18}
+  m_Center: {x: 0.0000001192093, y: 0.35159034, z: 0.07620049}
 --- !u!114 &4728084509080625234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2011,7 +2081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: 9195b4332bd2dc8429aca19578bc4f38, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &1201326492798352196
 GameObject:
@@ -2026,6 +2096,7 @@ GameObject:
   - component: {fileID: 4750289738488643073}
   - component: {fileID: 4728084507645183883}
   - component: {fileID: 4728084507645183882}
+  - component: {fileID: 3942565932243998238}
   - component: {fileID: 4728084507645183880}
   - component: {fileID: 4728084507645183881}
   m_Layer: 0
@@ -2126,6 +2197,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 0.8802144, z: 0.15240003}
   m_Center: {x: -0.000000011175871, y: 0.1948931, z: 0.07620049}
+--- !u!65 &3942565932243998238
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201326492798352196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.8802144, z: 0.18}
+  m_Center: {x: -0.000000011175871, y: 0.1948931, z: 0.07620049}
 --- !u!114 &4728084507645183880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2191,7 +2275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: bca4e4272c39ab44b85f881dbc227564, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &1201623618154791274
 GameObject:
@@ -2300,6 +2384,7 @@ GameObject:
   - component: {fileID: 8333847185574411342}
   - component: {fileID: 4728084508798663126}
   - component: {fileID: 4728084508798663125}
+  - component: {fileID: 8305999357486032481}
   - component: {fileID: 4728084508798663123}
   - component: {fileID: 4728084508798663124}
   m_Layer: 0
@@ -2400,6 +2485,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 0.9176309, z: 0.15240003}
   m_Center: {x: 0.00000035762787, y: 0.17618477, z: 0.07620049}
+--- !u!65 &8305999357486032481
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258814066412383958}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.9176309, z: 0.18}
+  m_Center: {x: 0.00000035762787, y: 0.17618477, z: 0.07620049}
 --- !u!114 &4728084508798663123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2464,8 +2562,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: fe9ac51ece357434abf1e0927f5f2644, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: ff35ff5478184ac4c9da9ed1cd8f11e3, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &1278260381200469313
 GameObject:
@@ -2574,6 +2672,7 @@ GameObject:
   - component: {fileID: 4410978630590786007}
   - component: {fileID: 4728084508976439717}
   - component: {fileID: 4728084508976439716}
+  - component: {fileID: 3620685728945060507}
   - component: {fileID: 4728084508976439714}
   - component: {fileID: 4728084508976439715}
   m_Layer: 0
@@ -2674,6 +2773,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 1.4031479, z: 0.15240003}
   m_Center: {x: 0.0000009536743, y: -0.06657367, z: 0.07620049}
+--- !u!65 &3620685728945060507
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326988716528755820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 1.4031479, z: 0.18}
+  m_Center: {x: 0.0000009536743, y: -0.06657367, z: 0.07620049}
 --- !u!114 &4728084508976439714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2738,8 +2850,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: ddde548e17f8dc04eb498c13a6536af4, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &1381139006617932304
 GameObject:
@@ -2848,6 +2960,7 @@ GameObject:
   - component: {fileID: 5399130244121379626}
   - component: {fileID: 4728084509021145588}
   - component: {fileID: 4728084509021145587}
+  - component: {fileID: 2828523638576624497}
   - component: {fileID: 4728084509021145585}
   - component: {fileID: 4728084509021145586}
   m_Layer: 0
@@ -2948,6 +3061,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100046, y: 0.52341706, z: 0.15240003}
   m_Center: {x: 0.00000023841858, y: 0.3732917, z: 0.07620049}
+--- !u!65 &2828523638576624497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392514492083812477}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.52341706, z: 0.18}
+  m_Center: {x: 0.00000023841858, y: 0.3732917, z: 0.07620049}
 --- !u!114 &4728084509021145585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3012,8 +3138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: 2f86cfd7acff16d48b80d64a5d2fab60, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &1494821080564083922
 GameObject:
@@ -3216,6 +3342,7 @@ GameObject:
   - component: {fileID: 3013629206655173996}
   - component: {fileID: 4728084507154565209}
   - component: {fileID: 4728084507154565208}
+  - component: {fileID: 1535213568784144548}
   - component: {fileID: 4728084507154565206}
   - component: {fileID: 4728084507154565207}
   m_Layer: 0
@@ -3316,6 +3443,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 0.84702486, z: 0.15240003}
   m_Center: {x: -0.00000023841858, y: 0.21148787, z: 0.07620049}
+--- !u!65 &1535213568784144548
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618960154685832868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.84702486, z: 0.18}
+  m_Center: {x: -0.00000023841858, y: 0.21148787, z: 0.07620049}
 --- !u!114 &4728084507154565206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3381,7 +3521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: 3a5791d8a07e9ae40a891f68f7ecbb34, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &1639303770366864548
 GameObject:
@@ -3396,6 +3536,7 @@ GameObject:
   - component: {fileID: 8900885388148733507}
   - component: {fileID: 4728084508703295947}
   - component: {fileID: 4728084508703295946}
+  - component: {fileID: 1490410311812514353}
   - component: {fileID: 4728084508703295944}
   - component: {fileID: 4728084508703295945}
   m_Layer: 0
@@ -3496,6 +3637,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100046, y: 0.43666288, z: 0.15240003}
   m_Center: {x: 0.0000009536743, y: 0.4166688, z: 0.07620049}
+--- !u!65 &1490410311812514353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639303770366864548}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.43666288, z: 0.18}
+  m_Center: {x: 0.0000009536743, y: 0.4166688, z: 0.07620049}
 --- !u!114 &4728084508703295944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3560,8 +3714,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: 38a45e6951bc62d4da9b613b3d4b27f3, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &1653679328298892147
 GameObject:
@@ -4046,6 +4200,7 @@ GameObject:
   - component: {fileID: 1069822810919658750}
   - component: {fileID: 4728084508420498680}
   - component: {fileID: 4728084508420498679}
+  - component: {fileID: 4460970709646253552}
   - component: {fileID: 4728084508420498677}
   - component: {fileID: 4728084508420498678}
   m_Layer: 0
@@ -4146,6 +4301,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100013, y: 0.82656986, z: 0.15240003}
   m_Center: {x: -0.00000071525574, y: 0.22171527, z: 0.07620049}
+--- !u!65 &4460970709646253552
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049433986816710889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.82656986, z: 0.18}
+  m_Center: {x: -0.00000071525574, y: 0.22171527, z: 0.07620049}
 --- !u!114 &4728084508420498677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4211,7 +4379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: af596a3aa2461004abda6a394ec1d4c9, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &2075137554154557443
 GameObject:
@@ -4696,6 +4864,7 @@ GameObject:
   - component: {fileID: 8588053911506447957}
   - component: {fileID: 4728084508984088090}
   - component: {fileID: 4728084508984088089}
+  - component: {fileID: 6689694592307255799}
   - component: {fileID: 4728084508984088087}
   - component: {fileID: 4728084508984088088}
   m_Layer: 0
@@ -4796,6 +4965,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 0.82315964, z: 0.15240003}
   m_Center: {x: -0.0000009536743, y: 0.2234204, z: 0.07620049}
+--- !u!65 &6689694592307255799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2348375171862145838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.82315964, z: 0.18}
+  m_Center: {x: -0.0000009536743, y: 0.2234204, z: 0.07620049}
 --- !u!114 &4728084508984088087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4861,7 +5043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: 3d2dbc648de217b40a7b46168f917d7d, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &2384628429235974292
 GameObject:
@@ -5158,6 +5340,7 @@ GameObject:
   - component: {fileID: 6095856862458238683}
   - component: {fileID: 4728084508598670529}
   - component: {fileID: 4728084508598670528}
+  - component: {fileID: 7394242373213414472}
   - component: {fileID: 4728084508598670558}
   - component: {fileID: 4728084508598670559}
   m_Layer: 0
@@ -5258,6 +5441,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100046, y: 0.46521893, z: 0.15240003}
   m_Center: {x: 0.0000009536743, y: 0.4023907, z: 0.07620049}
+--- !u!65 &7394242373213414472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2536211836270245640}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.46521893, z: 0.18}
+  m_Center: {x: 0.0000009536743, y: 0.4023907, z: 0.07620049}
 --- !u!114 &4728084508598670558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5322,8 +5518,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: 6877b025b50e3094588219f53527014f, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &2546351519372181464
 GameObject:
@@ -5338,6 +5534,7 @@ GameObject:
   - component: {fileID: 2346877286364620758}
   - component: {fileID: 4728084507737667722}
   - component: {fileID: 4728084507737667721}
+  - component: {fileID: 6637708714740541174}
   - component: {fileID: 4728084507737667719}
   - component: {fileID: 4728084507737667720}
   m_Layer: 0
@@ -5438,6 +5635,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 1.3038317, z: 0.15240003}
   m_Center: {x: 0.0000009536743, y: -0.016915638, z: 0.07620049}
+--- !u!65 &6637708714740541174
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2546351519372181464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 1.3038317, z: 0.18}
+  m_Center: {x: 0.0000009536743, y: -0.016915638, z: 0.07620049}
 --- !u!114 &4728084507737667719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5502,8 +5712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: b85bfcf9f56a01346863e101a41522dc, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &2652380875353842619
 GameObject:
@@ -5612,6 +5822,7 @@ GameObject:
   - component: {fileID: 2699689787521840776}
   - component: {fileID: 4728084508424564229}
   - component: {fileID: 4728084508424564228}
+  - component: {fileID: 7806486392376176230}
   - component: {fileID: 4728084508424564226}
   - component: {fileID: 4728084508424564227}
   m_Layer: 0
@@ -5712,6 +5923,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 0.93045443, z: 0.15240003}
   m_Center: {x: 0.00000047683716, y: 0.16977306, z: 0.07620049}
+--- !u!65 &7806486392376176230
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2748207618069967573}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.93045443, z: 0.18}
+  m_Center: {x: 0.00000047683716, y: 0.16977306, z: 0.07620049}
 --- !u!114 &4728084508424564226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5776,8 +6000,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: f026b9b4a51db714993ebbd443276087, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &2757536129580381024
 GameObject:
@@ -5792,6 +6016,7 @@ GameObject:
   - component: {fileID: 1457862634641926174}
   - component: {fileID: 4728084507231115516}
   - component: {fileID: 4728084507231115515}
+  - component: {fileID: 5886695005488882772}
   - component: {fileID: 4728084507231115513}
   - component: {fileID: 4728084507231115514}
   m_Layer: 0
@@ -5892,6 +6117,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100046, y: 0.44704863, z: 0.15240003}
   m_Center: {x: 0.0000009536743, y: 0.41147593, z: 0.07620049}
+--- !u!65 &5886695005488882772
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757536129580381024}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.44704863, z: 0.18}
+  m_Center: {x: 0.0000009536743, y: 0.41147593, z: 0.07620049}
 --- !u!114 &4728084507231115513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5956,8 +6194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: 7e1398787cf933c4cac0ae499bd40ade, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &2785229149868590497
 GameObject:
@@ -6066,6 +6304,7 @@ GameObject:
   - component: {fileID: 4525199743556365219}
   - component: {fileID: 4728084507772932550}
   - component: {fileID: 4728084507772932549}
+  - component: {fileID: 6944122320213968538}
   - component: {fileID: 4728084507772932547}
   - component: {fileID: 4728084507772932548}
   m_Layer: 0
@@ -6166,6 +6405,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 0.84125537, z: 0.15240003}
   m_Center: {x: -0.00000047683716, y: 0.21437253, z: 0.07620049}
+--- !u!65 &6944122320213968538
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2821642117346385153}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.84125537, z: 0.18}
+  m_Center: {x: -0.00000047683716, y: 0.21437253, z: 0.07620049}
 --- !u!114 &4728084507772932547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6231,7 +6483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: c66d186c84248fc4692ed1b4914ad538, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &2865980360817994351
 GameObject:
@@ -6246,6 +6498,7 @@ GameObject:
   - component: {fileID: 5816876566875417681}
   - component: {fileID: 4728084508602703824}
   - component: {fileID: 4728084508602701871}
+  - component: {fileID: 4169982821462671504}
   - component: {fileID: 4728084508602701869}
   - component: {fileID: 4728084508602701870}
   m_Layer: 0
@@ -6346,6 +6599,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100016, y: 0.7792608, z: 0.15240003}
   m_Center: {x: -0.0000014305115, y: 0.24536976, z: 0.07620049}
+--- !u!65 &4169982821462671504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2865980360817994351}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.7792608, z: 0.18}
+  m_Center: {x: -0.0000014305115, y: 0.24536976, z: 0.07620049}
 --- !u!114 &4728084508602701869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6411,7 +6677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: 9024ccf610c657b4d8acb3d93eace293, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &2944203198952536828
 GameObject:
@@ -6520,6 +6786,7 @@ GameObject:
   - component: {fileID: 16640590217640182}
   - component: {fileID: 4728084507338320419}
   - component: {fileID: 4728084507338320418}
+  - component: {fileID: 3398771661074078840}
   - component: {fileID: 4728084507338320416}
   - component: {fileID: 4728084507338320417}
   m_Layer: 0
@@ -6620,6 +6887,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100013, y: 0.8304794, z: 0.15240003}
   m_Center: {x: -0.0000009536743, y: 0.21976061, z: 0.07620049}
+--- !u!65 &3398771661074078840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957387577805709307}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.8304794, z: 0.18}
+  m_Center: {x: -0.0000009536743, y: 0.21976061, z: 0.07620049}
 --- !u!114 &4728084507338320416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6685,7 +6965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: 8ede7dd4acff5b044b082a399274b8a9, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &3140170189851001454
 GameObject:
@@ -6982,6 +7262,7 @@ GameObject:
   - component: {fileID: 258977962207727875}
   - component: {fileID: 4728084508390696734}
   - component: {fileID: 4728084508390696733}
+  - component: {fileID: 5036224183428162966}
   - component: {fileID: 4728084508390696731}
   - component: {fileID: 4728084508390696732}
   m_Layer: 0
@@ -7082,6 +7363,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100046, y: 0.5114584, z: 0.15240003}
   m_Center: {x: 0.00000047683716, y: 0.37927103, z: 0.07620049}
+--- !u!65 &5036224183428162966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3192154260108837156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.5114584, z: 0.18}
+  m_Center: {x: 0.00000047683716, y: 0.37927103, z: 0.07620049}
 --- !u!114 &4728084508390696731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7146,8 +7440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: a77a0355045153c449e189b58cb5312d, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &3232418536983117641
 GameObject:
@@ -7162,6 +7456,7 @@ GameObject:
   - component: {fileID: 6555673246729107710}
   - component: {fileID: 4728084507893138316}
   - component: {fileID: 4728084507893138315}
+  - component: {fileID: 682811374148293856}
   - component: {fileID: 4728084507893138313}
   - component: {fileID: 4728084507893138314}
   m_Layer: 0
@@ -7262,6 +7557,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 0.8365322, z: 0.15240003}
   m_Center: {x: -0.00000023841858, y: 0.21673422, z: 0.07620049}
+--- !u!65 &682811374148293856
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3232418536983117641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.8365322, z: 0.18}
+  m_Center: {x: -0.00000023841858, y: 0.21673422, z: 0.07620049}
 --- !u!114 &4728084507893138313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7327,7 +7635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: 051918458c115b44d951941343b85791, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &3301881396982727876
 GameObject:
@@ -7436,6 +7744,7 @@ GameObject:
   - component: {fileID: 5629383716603252942}
   - component: {fileID: 4728084507208098790}
   - component: {fileID: 4728084507208098789}
+  - component: {fileID: 7200589339101279041}
   - component: {fileID: 4728084507208098787}
   - component: {fileID: 4728084507208098788}
   m_Layer: 0
@@ -7536,6 +7845,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100046, y: 0.57893354, z: 0.15240003}
   m_Center: {x: 0.000000029802333, y: 0.3455335, z: 0.07620049}
+--- !u!65 &7200589339101279041
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3325406164456732350}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.57893354, z: 0.18}
+  m_Center: {x: 0.000000029802333, y: 0.3455335, z: 0.07620049}
 --- !u!114 &4728084507208098787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7601,7 +7923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: 6557fdb749e61e5449e64d7e2887dc92, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &3333636511813371526
 GameObject:
@@ -7804,6 +8126,7 @@ GameObject:
   - component: {fileID: 7028159560227986035}
   - component: {fileID: 4728084507689101244}
   - component: {fileID: 4728084507689101243}
+  - component: {fileID: 1775754510686717024}
   - component: {fileID: 4728084507689101241}
   - component: {fileID: 4728084507689101242}
   m_Layer: 0
@@ -7904,6 +8227,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 0.85135365, z: 0.15240003}
   m_Center: {x: -0.00000011920929, y: 0.20932356, z: 0.07620049}
+--- !u!65 &1775754510686717024
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3512735860921035090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.85135365, z: 0.18}
+  m_Center: {x: -0.00000011920929, y: 0.20932356, z: 0.07620049}
 --- !u!114 &4728084507689101241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7969,7 +8305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: 0e147d83457cfe2489439e7d67b11902, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &3530335647945190241
 GameObject:
@@ -8805,7 +9141,7 @@ GameObject:
   - component: {fileID: 1453520264418315005}
   - component: {fileID: 4728084508545813186}
   - component: {fileID: 4728084508545813184}
-  - component: {fileID: 4728084508545813185}
+  - component: {fileID: 7650070447180673753}
   - component: {fileID: 4728084508545813213}
   - component: {fileID: 4728084508545813214}
   m_Layer: 0
@@ -8906,7 +9242,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.35135937, y: 0.8119795, z: 0.15240002}
   m_Center: {x: -0.014823235, y: 0.22901061, z: 0.07619977}
---- !u!65 &4728084508545813185
+--- !u!65 &7650070447180673753
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8917,8 +9253,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.9, z: 0.16}
-  m_Center: {x: -0.000002861023, y: 0.2290106, z: 0.07619978}
+  m_Size: {x: 0.25, y: 0.8119794, z: 0.18}
+  m_Center: {x: -0.0000009536743, y: 0.22901057, z: 0.07620049}
 --- !u!114 &4728084508545813213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8932,7 +9268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!114 &4728084508545813214
 MonoBehaviour:
@@ -9093,6 +9429,7 @@ GameObject:
   - component: {fileID: 2571749230028451525}
   - component: {fileID: 4728084507412610503}
   - component: {fileID: 4728084507412610502}
+  - component: {fileID: 3325560344822568985}
   - component: {fileID: 4728084507412610500}
   - component: {fileID: 4728084507412610501}
   m_Layer: 0
@@ -9193,6 +9530,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 1.459007, z: 0.15240003}
   m_Center: {x: 0.0000014305115, y: -0.09450318, z: 0.07620049}
+--- !u!65 &3325560344822568985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4056410251280791322}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 1.459007, z: 0.18}
+  m_Center: {x: 0.0000014305115, y: -0.09450318, z: 0.07620049}
 --- !u!114 &4728084507412610500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9257,8 +9607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: e2ad5f9492653fa41b4522f88f099d58, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &4138443461438775701
 GameObject:
@@ -9273,6 +9623,7 @@ GameObject:
   - component: {fileID: 9016545109557682854}
   - component: {fileID: 4728084507526109672}
   - component: {fileID: 4728084507526109671}
+  - component: {fileID: 1616069803195296619}
   - component: {fileID: 4728084507526109669}
   - component: {fileID: 4728084507526109670}
   m_Layer: 0
@@ -9373,6 +9724,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100046, y: 0.48753035, z: 0.15240003}
   m_Center: {x: 0.00000047683716, y: 0.39123505, z: 0.07620049}
+--- !u!65 &1616069803195296619
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4138443461438775701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.48753035, z: 0.18}
+  m_Center: {x: 0.00000047683716, y: 0.39123505, z: 0.07620049}
 --- !u!114 &4728084507526109669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9437,8 +9801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: 71f435fd6406f20449bdbee127136e3a, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &4227746339214674592
 GameObject:
@@ -9547,6 +9911,7 @@ GameObject:
   - component: {fileID: 7668564283213061448}
   - component: {fileID: 4728084507913902124}
   - component: {fileID: 4728084507913902123}
+  - component: {fileID: 3473547965637367287}
   - component: {fileID: 4728084507913902121}
   - component: {fileID: 4728084507913902122}
   m_Layer: 0
@@ -9647,6 +10012,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 1.5110583, z: 0.15240003}
   m_Center: {x: 0.0000009536743, y: -0.12052886, z: 0.07620049}
+--- !u!65 &3473547965637367287
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4258734572577633728}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 1.5110583, z: 0.18}
+  m_Center: {x: 0.0000009536743, y: -0.12052886, z: 0.07620049}
 --- !u!114 &4728084507913902121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9711,8 +10089,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: ac5413bf8e2f6ea4dbc7e50c1b92a2fb, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &4282908616017786433
 GameObject:
@@ -10103,6 +10481,7 @@ GameObject:
   - component: {fileID: 7245678202861260519}
   - component: {fileID: 4728084508388986050}
   - component: {fileID: 4728084508388986049}
+  - component: {fileID: 5379616542276671507}
   - component: {fileID: 4728084508388986079}
   - component: {fileID: 4728084508388986048}
   m_Layer: 0
@@ -10203,6 +10582,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 0.907443, z: 0.15240003}
   m_Center: {x: 0.00000035762787, y: 0.18127869, z: 0.07620049}
+--- !u!65 &5379616542276671507
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4751792318294231814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.907443, z: 0.18}
+  m_Center: {x: 0.00000035762787, y: 0.18127869, z: 0.07620049}
 --- !u!114 &4728084508388986079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10267,8 +10659,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: ac5413bf8e2f6ea4dbc7e50c1b92a2fb, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: d28bde1013011654a9a0bfdbde82aef7, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &4882145309274032441
 GameObject:
@@ -10644,6 +11036,7 @@ GameObject:
   - component: {fileID: 1765246867921098698}
   - component: {fileID: 4728084507711112602}
   - component: {fileID: 4728084507711112601}
+  - component: {fileID: 4551878364798522313}
   - component: {fileID: 4728084507711112599}
   - component: {fileID: 4728084507711112600}
   m_Layer: 0
@@ -10744,6 +11137,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 0.8157725, z: 0.15240003}
   m_Center: {x: -0.0000009536743, y: 0.22711399, z: 0.07620049}
+--- !u!65 &4551878364798522313
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5138486087967653089}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.8157725, z: 0.18}
+  m_Center: {x: -0.0000009536743, y: 0.22711399, z: 0.07620049}
 --- !u!114 &4728084507711112599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10809,7 +11215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: 9916fe95ced4e3244b466307b9efa1f3, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &5154172263704340911
 GameObject:
@@ -11012,6 +11418,7 @@ GameObject:
   - component: {fileID: 6311137322271503318}
   - component: {fileID: 4728084507243361921}
   - component: {fileID: 4728084507243361920}
+  - component: {fileID: 2496666151243817307}
   - component: {fileID: 4728084507243361950}
   - component: {fileID: 4728084507243361951}
   m_Layer: 0
@@ -11112,6 +11519,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100037, y: 0.68616986, z: 0.15240003}
   m_Center: {x: -0.00000071525574, y: 0.29191524, z: 0.07620049}
+--- !u!65 &2496666151243817307
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5208163721076307509}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.68616986, z: 0.18}
+  m_Center: {x: -0.00000071525574, y: 0.29191524, z: 0.07620049}
 --- !u!114 &4728084507243361950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11177,7 +11597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: ec14e2130bffe204ead2778da2eaa84a, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &5294319159352573134
 GameObject:
@@ -11192,6 +11612,7 @@ GameObject:
   - component: {fileID: 5654500208112041636}
   - component: {fileID: 4728084507356925838}
   - component: {fileID: 4728084507356925837}
+  - component: {fileID: 775186025006263660}
   - component: {fileID: 4728084507356925835}
   - component: {fileID: 4728084507356925836}
   m_Layer: 0
@@ -11292,6 +11713,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 0.94034374, z: 0.15240003}
   m_Center: {x: 0.00000023841858, y: 0.16482835, z: 0.07620049}
+--- !u!65 &775186025006263660
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294319159352573134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.94034374, z: 0.18}
+  m_Center: {x: 0.00000023841858, y: 0.16482835, z: 0.07620049}
 --- !u!114 &4728084507356925835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11356,8 +11790,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: a8adf343ec466034d9a283905a5ab6d0, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &5343446167591549591
 GameObject:
@@ -11372,6 +11806,7 @@ GameObject:
   - component: {fileID: 9193433112558671923}
   - component: {fileID: 4728084507593777736}
   - component: {fileID: 4728084507593777735}
+  - component: {fileID: 702505365368324082}
   - component: {fileID: 4728084507593777733}
   - component: {fileID: 4728084507593777734}
   m_Layer: 0
@@ -11472,6 +11907,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 0.8721991, z: 0.15240003}
   m_Center: {x: -0.000000059604634, y: 0.19890065, z: 0.07620049}
+--- !u!65 &702505365368324082
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5343446167591549591}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.8721991, z: 0.18}
+  m_Center: {x: -0.000000059604634, y: 0.19890065, z: 0.07620049}
 --- !u!114 &4728084507593777733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11537,7 +11985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: ff479e4c2555405438960fdd352b9c0c, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &5348736653769013621
 GameObject:
@@ -12101,6 +12549,7 @@ GameObject:
   - component: {fileID: 3828839119883070101}
   - component: {fileID: 4728084507602123566}
   - component: {fileID: 4728084507602123565}
+  - component: {fileID: 1642863765100571452}
   - component: {fileID: 4728084507602123563}
   - component: {fileID: 4728084507602123564}
   m_Layer: 0
@@ -12201,6 +12650,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100016, y: 1.2566863, z: 0.15240003}
   m_Center: {x: 0.0000019073486, y: 0.006657081, z: 0.07620049}
+--- !u!65 &1642863765100571452
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785525234304436553}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 1.2566863, z: 0.18}
+  m_Center: {x: 0.0000019073486, y: 0.006657081, z: 0.07620049}
 --- !u!114 &4728084507602123563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12265,8 +12727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: ba32677a7b81fc84a8d42f25d064ef59, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &5803278714170243267
 GameObject:
@@ -12924,6 +13386,7 @@ GameObject:
   - component: {fileID: 74386905739933339}
   - component: {fileID: 4728084507265948909}
   - component: {fileID: 4728084507265948908}
+  - component: {fileID: 8328630342852115926}
   - component: {fileID: 4728084507265948906}
   - component: {fileID: 4728084507265948907}
   m_Layer: 0
@@ -13024,6 +13487,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 0.8949366, z: 0.15240003}
   m_Center: {x: 0.00000017881393, y: 0.18753192, z: 0.07620049}
+--- !u!65 &8328630342852115926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6227044059180610790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.8949366, z: 0.18}
+  m_Center: {x: 0.00000017881393, y: 0.18753192, z: 0.07620049}
 --- !u!114 &4728084507265948906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13088,8 +13564,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 0e0582c70f9753241ab0052e29a122ca, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: ab530792133e3504ab3af3a8d210e851, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &6321698254349350751
 GameObject:
@@ -13104,6 +13580,7 @@ GameObject:
   - component: {fileID: 1463979443222751025}
   - component: {fileID: 4728084508775222900}
   - component: {fileID: 4728084508775222899}
+  - component: {fileID: 4879324299085246036}
   - component: {fileID: 4728084508775222897}
   - component: {fileID: 4728084508775222898}
   m_Layer: 0
@@ -13204,6 +13681,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100043, y: 0.40992942, z: 0.15240003}
   m_Center: {x: 0.0000014305115, y: 0.43003553, z: 0.07620049}
+--- !u!65 &4879324299085246036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6321698254349350751}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.40992942, z: 0.18}
+  m_Center: {x: 0.0000014305115, y: 0.43003553, z: 0.07620049}
 --- !u!114 &4728084508775222897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13268,8 +13758,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: 485d29c593390734fbd50baa1084e09c, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &6419793765017026345
 GameObject:
@@ -13284,6 +13774,7 @@ GameObject:
   - component: {fileID: 2062197094828655042}
   - component: {fileID: 4728084507139572975}
   - component: {fileID: 4728084507139572974}
+  - component: {fileID: 4904959434408988329}
   - component: {fileID: 4728084507139572972}
   - component: {fileID: 4728084507139572973}
   m_Layer: 0
@@ -13384,6 +13875,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 0.9575375, z: 0.15240003}
   m_Center: {x: 0.00000047683716, y: 0.15623157, z: 0.07620049}
+--- !u!65 &4904959434408988329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6419793765017026345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.9575375, z: 0.18}
+  m_Center: {x: 0.00000047683716, y: 0.15623157, z: 0.07620049}
 --- !u!114 &4728084507139572972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13448,8 +13952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: f2237009fc5201a44a80772c728255db, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &6468690234311274828
 GameObject:
@@ -13464,6 +13968,7 @@ GameObject:
   - component: {fileID: 2256385454348910610}
   - component: {fileID: 4728084507171840533}
   - component: {fileID: 4728084507171840532}
+  - component: {fileID: 5810423962782818594}
   - component: {fileID: 4728084507171840530}
   - component: {fileID: 4728084507171840531}
   m_Layer: 0
@@ -13564,6 +14069,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100013, y: 1.4829427, z: 0.15240003}
   m_Center: {x: 0.0000009536743, y: -0.1064711, z: 0.07620049}
+--- !u!65 &5810423962782818594
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6468690234311274828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 1.4829427, z: 0.18}
+  m_Center: {x: 0.0000009536743, y: -0.1064711, z: 0.07620049}
 --- !u!114 &4728084507171840530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13628,8 +14146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: fe9ac51ece357434abf1e0927f5f2644, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &6480642098780468994
 GameObject:
@@ -13832,6 +14350,7 @@ GameObject:
   - component: {fileID: 1117520161805423829}
   - component: {fileID: 4728084507709328910}
   - component: {fileID: 4728084507709328909}
+  - component: {fileID: 2573248051038058518}
   - component: {fileID: 4728084507709328907}
   - component: {fileID: 4728084507709328908}
   m_Layer: 0
@@ -13932,6 +14451,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 1.3473353, z: 0.15240003}
   m_Center: {x: 0.0000014305115, y: -0.03866744, z: 0.07620049}
+--- !u!65 &2573248051038058518
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6625986358809652684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 1.3473353, z: 0.18}
+  m_Center: {x: 0.0000014305115, y: -0.03866744, z: 0.07620049}
 --- !u!114 &4728084507709328907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13996,8 +14528,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: e0e688d4352079e4f9d9972c45b67a96, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &6639225499881273848
 GameObject:
@@ -14012,6 +14544,7 @@ GameObject:
   - component: {fileID: 941310674246225834}
   - component: {fileID: 4728084508430402959}
   - component: {fileID: 4728084508430402958}
+  - component: {fileID: 3482744737718378002}
   - component: {fileID: 4728084508430402956}
   - component: {fileID: 4728084508430402957}
   m_Layer: 0
@@ -14112,6 +14645,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100046, y: 0.5464831, z: 0.15240003}
   m_Center: {x: 0.00000023841858, y: 0.36175868, z: 0.07620049}
+--- !u!65 &3482744737718378002
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6639225499881273848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.5464831, z: 0.18}
+  m_Center: {x: 0.00000023841858, y: 0.36175868, z: 0.07620049}
 --- !u!114 &4728084508430402956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14176,8 +14722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 6877b025b50e3094588219f53527014f, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: 67ffc99c04782c242b3b1188d2a3753d, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &6719168022260991854
 GameObject:
@@ -14662,6 +15208,7 @@ GameObject:
   - component: {fileID: 8929090926519522045}
   - component: {fileID: 4728084508895612462}
   - component: {fileID: 4728084508895612461}
+  - component: {fileID: 725169133494864774}
   - component: {fileID: 4728084508895612459}
   - component: {fileID: 4728084508895612460}
   m_Layer: 0
@@ -14762,6 +15309,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100043, y: 0.39759102, z: 0.15240003}
   m_Center: {x: 0.0000009536743, y: 0.4362047, z: 0.07620049}
+--- !u!65 &725169133494864774
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6865495119919326861}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.39759102, z: 0.18}
+  m_Center: {x: 0.0000009536743, y: 0.4362047, z: 0.07620049}
 --- !u!114 &4728084508895612459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14826,8 +15386,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: 498ef69dd2d5744459448332bbaa74aa, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &6888091179880811638
 GameObject:
@@ -15124,6 +15684,7 @@ GameObject:
   - component: {fileID: 1637071792912611160}
   - component: {fileID: 4728084508161864942}
   - component: {fileID: 4728084508161864941}
+  - component: {fileID: 6688610458826883599}
   - component: {fileID: 4728084508161864939}
   - component: {fileID: 4728084508161864940}
   m_Layer: 0
@@ -15224,6 +15785,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 0.9915507, z: 0.15240003}
   m_Center: {x: 0.0000009536743, y: 0.13922495, z: 0.07620049}
+--- !u!65 &6688610458826883599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7016455770285569948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.9915507, z: 0.18}
+  m_Center: {x: 0.0000009536743, y: 0.13922495, z: 0.07620049}
 --- !u!114 &4728084508161864939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15288,8 +15862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: 0e0582c70f9753241ab0052e29a122ca, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &7104035391221442416
 GameObject:
@@ -15586,6 +16160,7 @@ GameObject:
   - component: {fileID: 3856378067706773107}
   - component: {fileID: 4728084508000754056}
   - component: {fileID: 4728084508000754055}
+  - component: {fileID: 101166784485274}
   - component: {fileID: 4728084508000754053}
   - component: {fileID: 4728084508000754054}
   m_Layer: 0
@@ -15686,6 +16261,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100046, y: 0.6076929, z: 0.15240003}
   m_Center: {x: -0.00000011920928, y: 0.33115378, z: 0.07620049}
+--- !u!65 &101166784485274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7194927497443602747}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.6076929, z: 0.18}
+  m_Center: {x: -0.00000011920928, y: 0.33115378, z: 0.07620049}
 --- !u!114 &4728084508000754053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15751,7 +16339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: f7f734eb0d49a2b4ea3a6a978fd918e2, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &7236256208074091629
 GameObject:
@@ -16330,6 +16918,7 @@ GameObject:
   - component: {fileID: 1358408656831334852}
   - component: {fileID: 4728084508867819188}
   - component: {fileID: 4728084508867819187}
+  - component: {fileID: 8630993548201999247}
   - component: {fileID: 4728084508867819185}
   - component: {fileID: 4728084508867819186}
   m_Layer: 0
@@ -16430,6 +17019,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100028, y: 0.7110255, z: 0.15240003}
   m_Center: {x: -0.0000009536743, y: 0.27948743, z: 0.07620049}
+--- !u!65 &8630993548201999247
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698385286793204144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.7110255, z: 0.18}
+  m_Center: {x: -0.0000009536743, y: 0.27948743, z: 0.07620049}
 --- !u!114 &4728084508867819185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16495,7 +17097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: 46fc7949499d094449c473ea907ef8e1, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &7711812599923078569
 GameObject:
@@ -16980,6 +17582,7 @@ GameObject:
   - component: {fileID: 1132206003417329602}
   - component: {fileID: 4728084507802707713}
   - component: {fileID: 4728084507802707712}
+  - component: {fileID: 5664399651287871541}
   - component: {fileID: 4728084507802707742}
   - component: {fileID: 4728084507802707743}
   m_Layer: 0
@@ -17080,6 +17683,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100022, y: 0.7479827, z: 0.15240003}
   m_Center: {x: -0.00000071525574, y: 0.2610089, z: 0.07620049}
+--- !u!65 &5664399651287871541
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8039115600309750171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.7479827, z: 0.18}
+  m_Center: {x: -0.00000071525574, y: 0.2610089, z: 0.07620049}
 --- !u!114 &4728084507802707742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17145,7 +17761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: af2cb88dc4ac4d34fa8584123669989f, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &8079788449278950559
 GameObject:
@@ -17348,6 +17964,7 @@ GameObject:
   - component: {fileID: 836391274877683473}
   - component: {fileID: 4728084508426730331}
   - component: {fileID: 4728084508426730330}
+  - component: {fileID: 8105339977188035103}
   - component: {fileID: 4728084508426730328}
   - component: {fileID: 4728084508426730329}
   m_Layer: 0
@@ -17448,6 +18065,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 0.8874716, z: 0.15240003}
   m_Center: {x: 0.000000089406974, y: 0.1912644, z: 0.07620049}
+--- !u!65 &8105339977188035103
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211632628300904286}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.8874716, z: 0.18}
+  m_Center: {x: 0.000000089406974, y: 0.1912644, z: 0.07620049}
 --- !u!114 &4728084508426730328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17513,7 +18143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: e7a55044303f0694f862e6fb443c7464, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &8267980002488586315
 GameObject:
@@ -17528,6 +18158,7 @@ GameObject:
   - component: {fileID: 134712006282732609}
   - component: {fileID: 4728084508818567806}
   - component: {fileID: 4728084508818567805}
+  - component: {fileID: 4016406586153199929}
   - component: {fileID: 4728084508818567803}
   - component: {fileID: 4728084508818567804}
   m_Layer: 0
@@ -17628,6 +18259,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100043, y: 0.64937705, z: 0.15240003}
   m_Center: {x: -0.00000047683716, y: 0.31031165, z: 0.07620049}
+--- !u!65 &4016406586153199929
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8267980002488586315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.64937705, z: 0.18}
+  m_Center: {x: -0.00000047683716, y: 0.31031165, z: 0.07620049}
 --- !u!114 &4728084508818567803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17693,7 +18337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: bf4d2d4c71875894db4aa617d1cabfd6, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &8295934835887178282
 GameObject:
@@ -17990,6 +18634,7 @@ GameObject:
   - component: {fileID: 5529420411521763205}
   - component: {fileID: 4728084508233040171}
   - component: {fileID: 4728084508233040170}
+  - component: {fileID: 4968298374532519269}
   - component: {fileID: 4728084508233040168}
   - component: {fileID: 4728084508233040169}
   m_Layer: 0
@@ -18090,6 +18735,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 1.2754936, z: 0.15240003}
   m_Center: {x: 0.0000009536743, y: -0.0027465383, z: 0.07620049}
+--- !u!65 &4968298374532519269
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8580297516928268686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 1.2754936, z: 0.18}
+  m_Center: {x: 0.0000009536743, y: -0.0027465383, z: 0.07620049}
 --- !u!114 &4728084508233040168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18154,8 +18812,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: bfb9f7669308e594697b49eb89b47ccd, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &8587757766555314769
 GameObject:
@@ -18576,6 +19234,7 @@ GameObject:
   - component: {fileID: 3904822389915796164}
   - component: {fileID: 4728084508740324273}
   - component: {fileID: 4728084508740324272}
+  - component: {fileID: 1821064691304317870}
   - component: {fileID: 4728084508740324238}
   - component: {fileID: 4728084508740324239}
   m_Layer: 0
@@ -18676,6 +19335,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38099998, y: 1.2728509, z: 0.15240003}
   m_Center: {x: 0.0000019073486, y: -0.0014251773, z: 0.07620049}
+--- !u!65 &1821064691304317870
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8685875635664852675}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 1.2728509, z: 0.18}
+  m_Center: {x: 0.0000019073486, y: -0.0014251773, z: 0.07620049}
 --- !u!114 &4728084508740324238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18740,8 +19412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1660bf7861ec0041b26da7c776be846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 4dfda5d1a2eab1b48a722a16d88cddf6, type: 3}
-  useVelocityBasedVolume: 1
+  soundToPlay: {fileID: 8300000, guid: 45ffc3fb6a3071546a1be58250a2fac2, type: 3}
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &8788983269174567757
 GameObject:
@@ -19038,6 +19710,7 @@ GameObject:
   - component: {fileID: 8197060668776108102}
   - component: {fileID: 4728084507470924500}
   - component: {fileID: 4728084507470924499}
+  - component: {fileID: 7193696687151929927}
   - component: {fileID: 4728084507470924497}
   - component: {fileID: 4728084507470924498}
   m_Layer: 0
@@ -19138,6 +19811,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100007, y: 0.8652304, z: 0.15240003}
   m_Center: {x: -0.00000017881393, y: 0.20238502, z: 0.07620049}
+--- !u!65 &7193696687151929927
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8844810114646244973}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.8652304, z: 0.18}
+  m_Center: {x: -0.00000017881393, y: 0.20238502, z: 0.07620049}
 --- !u!114 &4728084507470924497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19203,7 +19889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: b52906027a79c8b4fb69411be0929e84, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &8948103741170577679
 GameObject:
@@ -19218,6 +19904,7 @@ GameObject:
   - component: {fileID: 4685933182974122660}
   - component: {fileID: 4728084507184646125}
   - component: {fileID: 4728084507184646124}
+  - component: {fileID: 3215215394856364652}
   - component: {fileID: 4728084507184646122}
   - component: {fileID: 4728084507184646123}
   m_Layer: 0
@@ -19318,6 +20005,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100043, y: 0.62168455, z: 0.15240003}
   m_Center: {x: -0.00000023841858, y: 0.3241579, z: 0.07620049}
+--- !u!65 &3215215394856364652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8948103741170577679}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.62168455, z: 0.18}
+  m_Center: {x: -0.00000023841858, y: 0.3241579, z: 0.07620049}
 --- !u!114 &4728084507184646122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19383,7 +20083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: 799d483863c7b3f4099451ce93894bae, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &8968238017005537562
 GameObject:
@@ -19586,6 +20286,7 @@ GameObject:
   - component: {fileID: 3473119035837675787}
   - component: {fileID: 4728084507378325129}
   - component: {fileID: 4728084507378325128}
+  - component: {fileID: 6163308890577317355}
   - component: {fileID: 4728084507378325126}
   - component: {fileID: 4728084507378325127}
   m_Layer: 0
@@ -19686,6 +20387,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38100004, y: 0.8119794, z: 0.15240003}
   m_Center: {x: -0.00000047683716, y: 0.22901051, z: 0.07620049}
+--- !u!65 &6163308890577317355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9165009941988983430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.8119794, z: 0.18}
+  m_Center: {x: -0.00000047683716, y: 0.22901051, z: 0.07620049}
 --- !u!114 &4728084507378325126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19751,7 +20465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 8300000, guid: a406315e521b82b4b96f676139223b2a, type: 3}
-  useVelocityBasedVolume: 1
+  useVelocityBasedVolume: 0
   velocityVolumeMultiplier: 5
 --- !u!1 &9179496302687602798
 GameObject:

@@ -46,6 +46,8 @@ public class MusicDisplay : MonoBehaviour
 
         // Exit if not sharp, continue if it is
         if (!MusicHelper.GetIsNoteSharp(pitch)) return;
+
+        // Render sharp sign
         GameObject sharp = Instantiate(SharpSign);
         sharp.transform.parent = transform;
         sharp.transform.localRotation = Quaternion.identity;

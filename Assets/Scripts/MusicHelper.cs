@@ -8,7 +8,7 @@ using UnityEngine;
 // This file contains helper functions to help manipulate these values
 public static class MusicHelper
 {
-    private static readonly char[] local_note_lookup = {'A', 'A', 'B', 'C', 'C', 'D', 'D', 'E', 'F', 'F', 'G', 'G'};
+    private static readonly char[] local_note_lookup = {'A', 'A', 'B', 'C', 'C', 'D', 'D', 'E', 'F', 'F', 'G', 'G', 'A'};
 
     // Return which octave a note is in
     public static int GetOctave(int n) {
@@ -51,10 +51,19 @@ public static class MusicHelper
         int note = GetLocalNote(n);
         string name = local_note_lookup[note].ToString() + octave.ToString();
 
-        // If the note is an accidental, add a sharp then append the conjugate name
+        // If the note is an accidental, add a sharp then append to the name
         if (note == 1 || note == 4 || note == 6 || note == 9 || note == 11) {
-            name += "#";
+            name += "#" + "/" + local_note_lookup[note+1].ToString();
+
+            if (note+1 > 11)
+                name += (octave + 1).ToString();
+            else
+                name += octave.ToString();
+
+            name += "b";
         }
+
+        Debug.Log(name);
 
         return name;
     }

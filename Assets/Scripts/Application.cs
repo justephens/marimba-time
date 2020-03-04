@@ -35,8 +35,6 @@ public class Application : MonoBehaviour
 
     void Update()
     {
-        if (gameMode == GameMode.NOTE_DRILL) {
-        }
     }
 
 
@@ -52,14 +50,16 @@ public class Application : MonoBehaviour
     // Generates the next note in the Drill exercise
     void Drill_NextNote()
     {
-        // Generate a random pitch and draw it to the display
+        // Generate a random pitch
         drill_pitch = Random.Range(48, 60);
+
+        // Draw note to Music Display
         display.ClearDisplay();
         display.DisplayNote(0, drill_pitch, true);
 
         // Activate the note, so that it will highlight after a delay
         MarimbaNote note = MarimbaNote.GetNote(drill_pitch);
-        note.ActivateNote(5f, 2.5f);
+        note.ActivateNote(1f, 2.5f);
 
         // Reset time
         drill_time = Time.time;
@@ -72,7 +72,7 @@ public class Application : MonoBehaviour
 
     // Allows Marimba notes to alert the Application about collisions. Used for
     // menu selection and game playing
-    public void RegisterNoteHit(GameObject note, Collision col)
+    public void RegisterNoteHit(GameObject note, Collider col)
     {
         Debug.Log(note.name + " hit by mallets");
 

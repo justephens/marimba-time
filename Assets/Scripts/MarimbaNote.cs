@@ -7,6 +7,8 @@ using static MusicHelper;
 public class MarimbaNote : MonoBehaviour
 {
     public AudioClip soundToPlay;
+
+    // TODO: Implement velocity based volume
     public bool useVelocityBasedVolume = true;
     public float velocityVolumeMultiplier = 5.0f;
 
@@ -75,7 +77,7 @@ public class MarimbaNote : MonoBehaviour
 
 
     // This runs every time the block is hit
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
         // Audio source to play from
         AudioSource audio = null;
@@ -94,9 +96,14 @@ public class MarimbaNote : MonoBehaviour
             audio = this.gameObject.AddComponent(typeof(AudioSource)) as AudioSource;
         }
 
+        // Mallet volume based on velocity
+        if (col.gameObject.tag == "Marimba_Mallet")
+            audio.volume = (useVelocityBasedVolume) ? 1.0f * velocityVolumeMultiplier : 1.0f;
+        // If not a mallet hitting the note, play quietly
+        else audio.volume = 0.1f;
+
         // Set properties of AudioSource, then play clip
         audio.clip = soundToPlay;
-        audio.volume = (useVelocityBasedVolume) ? col.relativeVelocity.magnitude * velocityVolumeMultiplier : 1.0f;
         audio.Play();
 
         // Let the application manager know about the collision

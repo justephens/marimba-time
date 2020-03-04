@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Display_Note
   - Marimba_Note
+  - Marimba_Mallet
   layers:
   - Default
   - TransparentFX

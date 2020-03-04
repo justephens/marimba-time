@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1667698710338034307}
   m_Layer: 0
   m_Name: Sphere001
-  m_TagString: Untagged
+  m_TagString: Marimba_Mallet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,10 +90,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.625
-  m_Height: 1.25
+  m_Radius: 0.375
+  m_Height: 0.75
   m_Direction: 2
-  m_Center: {x: -0.0045017963, y: 0.00000093073356, z: 0.0000019662987}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4051420804572891438
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 5411185830591523226}
   - component: {fileID: 4051420804572891439}
   m_Layer: 0
-  m_Name: Mallet Left
+  m_Name: Mallet_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,14 +121,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4051420804572891438}
-  m_LocalRotation: {x: 0.68685347, y: -0.16802488, z: 0.16802488, w: -0.68685347}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.06818061, y: 0.6390821, z: 0.9174}
   m_LocalScale: {x: 0.11994581, y: 0.11994581, z: 0.11994581}
   m_Children:
   - {fileID: 5411185830926842467}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 242.507, y: -90, z: 89.99999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &5411185830591523205
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -219,7 +219,7 @@ MonoBehaviour:
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: 1
   useHandObjectAttachmentPoint: 0
-  attachEaseIn: 1
+  attachEaseIn: 0
   snapAttachEaseInCurve:
     serializedVersion: 2
     m_Curve:
@@ -250,7 +250,7 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
-  hoverPriority: 0
+  hoverPriority: 5
 --- !u!114 &4051420804572891439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,4 +405,4 @@ CapsuleCollider:
   m_Radius: 0.3
   m_Height: 1.4
   m_Direction: 2
-  m_Center: {x: -0.00000047549707, y: -0.0000026343596, z: 0.66176206}
+  m_Center: {x: 0, y: 0, z: 0.66176206}
